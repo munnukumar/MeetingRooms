@@ -1,17 +1,58 @@
-.container {
-    /* display: flex; */
-    /* justify-content: space-around; */
-    max-width: 500px;
-    margin-left: 30px;
+body {
+    background-color: black;
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+    align-items: center; 
+}
+
+h1 {
+    color:rgb(148, 105, 5);
+    text-align: center;
+    box-shadow: 0px 8px 19px rgb(75, 99, 2);
+
+}
+
+.meetingRoom-box{
+    flex: 1;
+    background-color: #02f7a5;
+    padding: 20px;
+    margin-left: 0px;
+    margin-right: 60px;  
+    border-radius: 8px;
+    box-shadow: 0px 8px 19px whitesmoke;
+    text-align: center;
 }
 
 .meeting-box {
-    flex: 1;
-    background-color: #f0f0f0;
+    background-color: rgb(44, 243, 4);
     padding: 20px;
-    margin: 20px;
+    width: 460px;
+    margin-left: 38%;
+    margin-bottom: 40px;
+    height: 200px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    box-shadow: 0px 8px 19px whitesmoke;
+    text-align: center;
+}
+
+strong {
+    color: #725104;
+}
+#meetingPopup {
+    flex: 1;
+    background-color: rgb(43, 20, 2);
+    padding: 20px;
+    margin-left: 680px;
+    margin-top: 220px;
+    width: 500px;
+    height: 420px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 19px whitesmoke;
     text-align: center;
 }
 
@@ -36,7 +77,7 @@
 }
 
 .meeting-box button:hover {
-    background-color: #0056b3;
+    background-color: rgb(235, 4, 4);
 }
 
 .popup {
@@ -73,3 +114,30 @@
     color: black;
     text-decoration: none;
 }
+
+button{
+    background-color: #b9b904;
+    font-size: 15px;
+    border: none;
+    padding: 15px 32px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 10px gray;
+}
+
+button:active {
+    background-color: #05f109;
+    
+    transform: translateY(4px);
+  }
+
+  input {
+    background: rgb(4, 242, 186);
+    border: 10px;
+    outline: none;
+    width:300px;
+    font-size: 20px;
+  }
+  
+

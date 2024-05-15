@@ -7,45 +7,48 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
+    <h1>MEETING ROOMS</h1>
+<div class="container1">
     <h2>Meeting Schedule</h2>
-    <div class="meeting-box" id="meetingBox1">
+    <div class="meetingRoom-box" id="meetingBox1">
         <h3>Time: 10:00 AM</h3>
-        <p>Total Seats Available: <span id="seats1">4</span></p>
+        <p>Total Seats Available: <span id="seats1"></span></p>
         <button onclick="openPopup(1)">Schedule Meeting</button>
     </div>
-    <div class="meeting-box" id="meetingBox2">
+    <div class="meetingRoom-box" id="meetingBox2">
         <h3>Time: 1:00 PM</h3>
-        <p>Total Seats Available: <span id="seats2">4</span></p>
+        <p>Total Seats Available: <span id="seats2"></span></p>
         <button onclick="openPopup(2)">Schedule Meeting</button>
     </div>
-    <div class="meeting-box" id="meetingBox3">
+    <div class="meetingRoom-box" id="meetingBox3">
         <h3>Time: 4:00 PM</h3>
-        <p>Total Seats Available: <span id="seats3">4</span></p>
+        <p>Total Seats Available: <span id="seats3"></span></p>
         <button onclick="openPopup(3)">Schedule Meeting</button>
     </div>
-    <div class="meeting-box" id="meetingBox4">
+    <div class="meetingRoom-box" id="meetingBox4">
         <h3>Time: 7:00 PM</h3>
-        <p>Total Seats Available: <span id="seats4">4</span></p>
+        <p>Total Seats Available: <span id="seats4"></span></p>
         <button onclick="openPopup(4)">Schedule Meeting</button>
     </div>
 </div>
 
 <!-- Popup for scheduling meeting -->
-<div id="meetingPopup" class="popup">
-    <div class="popup-content">
+<div style="background-color: rgb(20, 9, 1) ; " id="meetingPopup" class="popup">
+    <div style="background-color: rgb(20, 9, 1); margin-top: 0px;" class="popup-content">
         <span class="close" onclick="closePopup()">&times;</span>
-        <h2>Schedule Meeting</h2>
-        <form id="meetingForm">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <button type="submit">Schedule Meeting</button>
+        <h2 style="color: red; font-size: 50px;">Schedule Meeting</h2>
+        <form style="color: rgb(3, 244, 216); text-align: center; font-size: 30px;" id="meetingForm">
+            Name: <input type="text" id="name" placeholder="Your Name" required><br>
+            Email: <input type="email" id="email" placeholder="Your Email" required><br><br>
+            <button type="submit">Book Meeting</button>
         </form>
     </div>
 </div>
-<!-- 
-<ul style=" text-align: center; color:chartreuse; list-style-type: none;"><br></ul> -->
-<div id= "mittingList"></div>
+<br>
+
+<h1>SCHEDULED MEETING</h1>
+
+<div class="container"></div><br>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
 <script src="index.js"></script>
 </body>
